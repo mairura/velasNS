@@ -11,7 +11,7 @@ p {
 
 .container {
   height: 100%;
-  background-color: #295f34;
+  background-color: #383792;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -55,12 +55,13 @@ header{
 
 .right{
   display: flex;
-  background: black;
+  background: transparent;
   border-radius: 16px;
   padding: 12px 20px;
   height: 99%;
   margin-right: 10%;
   margin-top: 10px;
+  border: 1px solid;
 }
 
 .content-container {
@@ -171,7 +172,8 @@ header{
 input{
   border: 0;
   border-radius: 12px;
-  background-color: rgb(61, 231, 61);
+  background-color: transparent;
+  border: 1px solid;
   color: white;
   letter-spacing: 1px;
   font-size: 26px;
@@ -297,3 +299,96 @@ input:focus {
     background-position: 0% 50%;
   }
 }
+
+/* Make it responsive */
+@media screen and (max-width: 1260px ) {
+  .subdomain {
+    margin: 10px;
+    padding-top: 30px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .left-container{
+    padding-top: 15px;
+    width: auto;
+  }
+  .title{
+    font-size: 23px;
+  }
+  .subtitle{
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 565px){
+  .left-container{
+    padding-top: 20px;
+    text-align: left;
+  }
+  .title{
+    font-size: 20px;
+  } 
+}
+
+@media screen and (max-width: 509px){
+  .left-container{
+    padding-top: 20px;
+    text-align: left;
+  }
+  .title{
+    font-size: 18px;
+  } 
+  .subtitle{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 489px){
+  .left-container{
+    padding-top: 20px;
+    text-align: left;
+  }
+  .title{
+    font-size: 16px;
+  } 
+  .subtitle{
+    font-size: 13px;
+  }
+  .subdomain{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 469px){
+  .left-container{
+    padding-top: 20px;
+    text-align: left;
+  }
+  .title{
+    font-size: 14px;
+  } 
+  .subtitle{
+    font-size: 10px;
+  }
+  .subdomain{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 435px){
+  .left-container{
+    padding-top: 20px;
+    text-align: left;
+  }
+  .title{
+    font-size: 12px;
+  } 
+  .subtitle{
+    font-size: 10px;
+  }
+  .subdomain{
+    font-size: 12px;
+  }
+}
+

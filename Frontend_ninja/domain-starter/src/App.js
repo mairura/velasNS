@@ -260,7 +260,7 @@ const App = () => {
 		 if (network !== 'Velas Network Testnet') {
 			return (
 			  <div className="connect-wallet-container">
-				<h2>Please connect to the Velas Network Testnet</h2>
+				<h2>Please connect to the Velas Network</h2>
 				 {/* This button will call our switch network function */}
 				 <button className='cta-button mint-button' onClick={switchNetwork}>Click here to switch to Velas</button>
 			  </div>
@@ -367,8 +367,10 @@ const renderMints = () => {
 						<div className="left">
 							<img src={logo} alt="logo"/>
 							<br /><br />
-							<p className="title">&nbsp;Velas Name Service</p>
-							<p className="subtitle">&nbsp;We supply for the blockchain</p>
+							<div className="left-container">
+								<b className="title">&nbsp;Velas Name Service</b>
+								<p className="subtitle">&nbsp;We supply for the blockchain</p>
+							</div>
 						</div>
 						{/* Display a logo and wallet connection status*/}
 						<div className="right">
@@ -377,6 +379,7 @@ const renderMints = () => {
 						</div>
 					</header>
 				</div>
+				<b className="subdomain">We Got You! Get The Cheapest Domain For You 🫵</b>
 				{/* This will hide the connect button if currentAccount isn't empty*/}
 				{!currentAccount && renderNotConnectedContainer()}
 
